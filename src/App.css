@@ -1,33 +1,43 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333333;
+  color: #fff;
   text-align: center;
+  line-height: 1.5;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.treezy {
+  color: #7ac251;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#showcase-video {
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.invitation-content {
+  top: 0;
+  left: 0;
+  background: #333333;
+  opacity: 0.8;
+  padding: 10px 0;
+  width: 100%;
+  margin: 350px auto 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  margin-top: 420px;
+  opacity: 0.8;
 }
