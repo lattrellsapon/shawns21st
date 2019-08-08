@@ -57,11 +57,29 @@ export class Countdown extends Component {
       );
     } else {
       return (
-        <div className='timer'>
-          <h1>
+        <div className='timer six-grid'>
+          {/* <h1>
             {this.state.days} days {this.state.hours} hours {this.state.minutes}{' '}
             minutes {this.state.seconds} seconds
-          </h1>
+          </h1> */}
+          <div>
+            <p className='number-container text-center'>{this.state.days}</p>
+          </div>
+          <div>
+            <p className='number-container text-center'>{this.state.hours}</p>
+          </div>
+          <div>
+            <p className='number-container text-center'>{this.state.minutes}</p>
+          </div>
+          <div>
+            <p className='time-label text-center'>days</p>
+          </div>
+          <div>
+            <p className='time-label text-center'>hours</p>
+          </div>
+          <div>
+            <p className='time-label text-center'>minutes</p>
+          </div>
         </div>
       );
     }

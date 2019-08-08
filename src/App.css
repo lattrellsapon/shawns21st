@@ -25,15 +25,30 @@ body {
   margin: 30px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .treezy {
   color: #7ac251;
   font-weight: bold;
   text-decoration: none;
 }
 
+.shawn-heading {
+  margin-bottom: -60px;
+  margin-left: 100px;
+}
+
 .two-grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+.six-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
 }
 
 .flex-column {
@@ -119,7 +134,7 @@ video {
 }
 
 .cursive {
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family: Snell Roundhand, Brush Script MT, Brush Script Std, cursive;
   font-size: 100px;
   /* font-weight: bold; */
 }
@@ -129,7 +144,7 @@ video {
 }
 
 .banjee {
-  font-family: Degrassi;
+  font-family: Degrassi, Bradley Hand, cursive;
   font-size: 50px;
 }
 
@@ -186,6 +201,27 @@ button {
   border: none;
 }
 
+.timer {
+  width: 70%;
+  margin: auto;
+  font-weight: bold;
+}
+
+/* .time-label {
+  float: left;
+  background: red;
+} */
+
+.number-container {
+  background: #fff;
+  color: #000;
+  margin: auto;
+  max-width: 50%;
+  padding: 5px;
+  font-size: 30px;
+  /* padding-top: 15px; */
+}
+
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   /* For tablets: */
@@ -214,6 +250,9 @@ button {
   } */
   #landing-content {
     max-width: 50%;
+  }
+  .timer {
+    width: 25%;
   }
 }
 

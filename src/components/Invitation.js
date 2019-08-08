@@ -18,7 +18,7 @@ export class Invitation extends Component {
     return (
       <div className='invitation-content'>
         <div className='invitation-header mtb-10'>
-          <h3>SHAWN ARJAN</h3>
+          <h3 className='shawn-heading'>SHAWN ARJAN</h3>
           <span className='cursive'>beinte uno</span>
           <h3>23 AUGUST 2019</h3>
         </div>
