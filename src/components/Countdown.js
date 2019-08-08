@@ -62,14 +62,14 @@ export class Countdown extends Component {
             {this.state.days} days {this.state.hours} hours {this.state.minutes}{' '}
             minutes {this.state.seconds} seconds
           </h1> */}
-          <div>
-            <p className='number-container text-center'>{this.state.days}</p>
+          <div className='number-container text-center'>
+            <p>{this.state.days}</p>
           </div>
-          <div>
-            <p className='number-container text-center'>{this.state.hours}</p>
+          <div className='number-container text-center'>
+            <p>{this.state.hours}</p>
           </div>
-          <div>
-            <p className='number-container text-center'>{this.state.minutes}</p>
+          <div className='number-container text-center'>
+            <p>{this.state.minutes}</p>
           </div>
           <div>
             <p className='time-label text-center'>days</p>
