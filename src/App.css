@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 
 * {
   margin: 0;
@@ -12,38 +12,163 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.mtb-10 {
+  margin: 10px 0;
+}
+
+.mtb-30 {
+  margin: 30px 0;
+}
+
 .treezy {
   color: #7ac251;
   font-weight: bold;
   text-decoration: none;
 }
 
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  /* text-align: justify; */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-align {
+  text-align: justify;
+}
+
+#message-status {
+  margin-left: 5px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#landing-content {
+  background: #fff;
+  color: #333333;
+  padding: 10px;
+  margin: 300px auto 0 auto;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+#landing-content:hover {
+  background: #333333;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 #showcase-video {
-  opacity: 0.8;
+  /* 
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100%; */
+  /* display: flex; */
+  display: block;
+  opacity: 1;
 }
 
 .invitation-content {
   top: 0;
   left: 0;
-  background: #333333;
-  opacity: 0.8;
-  padding: 10px 0;
-  width: 75%;
-  margin: 350px auto 0 auto;
+  opacity: 0.6;
+  padding: 10px;
+  width: 70%;
+  margin: 10px auto;
   color: #fff;
   z-index: 1;
   border-radius: 4px;
+  background: #000000;
+}
+
+.invitation-header h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 6px;
+}
+
+.time-address {
+  letter-spacing: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.cursive {
+  font-family: Snell Roundhand, cursive;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.birthday-tagline {
+  letter-spacing: 2px;
+}
+
+.banjee {
+  font-family: Degrassi;
+  font-size: 50px;
+}
+
+.classy {
+  font-family: Snell Roundhand, cursive;
+  font-size: 50px;
+}
+
+.going-button {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.going-button:hover {
+  background: red;
+  color: #fff;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.r18-label {
+  color: red;
+}
+
+.happening-now {
+  background: red;
+  color: #fff;
 }
 
 .footer {
-  margin-top: 420px;
-  margin-bottom: 30px;
-  opacity: 0.8;
+  margin: 20px auto 20px auto;
 }
 
 .sound-buttons {
@@ -52,7 +177,7 @@ body {
 
 #soundItem {
   font-size: 30px;
-  background: #333333;
+  background: #000000;
   color: #fff;
   /* margin-top: 10px; */
 }
@@ -64,14 +189,40 @@ button {
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .invitation-content {
+  /* .invitation-content {
     width: 50%;
+  } */
+  .invitation-content {
+    margin: 150px auto 0 auto;
+  }
+  #showcase-video {
+    opacity: 0.8;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* display: flex; */
+  }
+  .footer {
+    margin-top: 100px;
+    opacity: 0.8;
+    margin-bottom: 25px;
+  }
+  /* #showcase-video {
+    display: block;
+  } */
+  #landing-content {
+    max-width: 50%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .invitation-content {
+  /* .invitation-content {
     max-width: 25%;
+  } */
+  #landing-content {
+    max-width: 30%;
   }
 }

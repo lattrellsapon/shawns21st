@@ -5,7 +5,10 @@ export class Footer extends Component {
     return (
       <div className='footer'>
         <p>
-          Created By{' '}
+          Video by <strong>Tanu Gago</strong>
+        </p>
+        <p>
+          Website By{' '}
           <a
             className='treezy'
             href='https://www.treezywebdesign.com/'

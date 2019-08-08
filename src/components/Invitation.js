@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Countdown from './Countdown';
+import Going from './Going';
 
 export class Invitation extends Component {
   hideTurnOnButton = () => {
@@ -15,20 +17,42 @@ export class Invitation extends Component {
   render() {
     return (
       <div className='invitation-content'>
-        <h1>Shawn's 21st Birthday</h1>
-        <p>Please join us to celebrate</p>
-        <p>August 24 2019 at 7:00 PM</p>
-        <p>RSVP to Shawn by August 18 2019</p>
-        <p>Email Shawn at test@gmail.com</p>
-        <div className='sound-buttons'>
+        <div className='invitation-header mtb-10'>
+          <h3>SHAWN ARJAN</h3>
+          <span className='cursive'>beinte uno</span>
+          <h3>23 AUGUST 2019</h3>
+        </div>
+        <div className='countdown-timer mtb-30'>
+          <Countdown />
+        </div>
+        <div className='invitation-details mtb-10'>
+          <div className='time-address'>
+            <p>7:00 PM @ PROTOCOL</p>
+            <p>2 COLOMBO ST, CASHMERE</p>
+            <p>CHRISTCHURCH</p>
+          </div>
+          <div className='birthday-tagline mtb-30'>
+            <h1>
+              BE <span className='banjee'>BANJEE</span> BE{' '}
+              <span className='classy'>Classy</span>
+            </h1>
+          </div>
+        </div>
+        <div className='going-div mtb-30'>
+          <Going />
+        </div>
+        <div className='r18-label'>
+          <h1>R18</h1>
+        </div>
+        <div className='sound-buttons mtb-10'>
           <div style={this.hideTurnOnButton()}>
             <button onClick={this.props.turnSoundOn}>
-              <i class='fas fa-volume-up' id='soundItem' />
+              <i className='fas fa-volume-up' id='soundItem' />
             </button>
           </div>
           <div style={this.hideTurnOffButton()}>
             <button onClick={this.props.turnSoundOff}>
-              <i class='fas fa-volume-mute' id='soundItem' />
+              <i className='fas fa-volume-mute' id='soundItem' />
             </button>
           </div>
         </div>
