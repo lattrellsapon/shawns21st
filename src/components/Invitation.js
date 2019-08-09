@@ -5,16 +5,16 @@ import Going from './Going';
 import { Link } from 'react-router-dom';
 
 export class Invitation extends Component {
-  hideTurnOnButton = () => {
-    return {
-      display: this.props.isSoundOff ? 'block' : 'none'
-    };
-  };
-  hideTurnOffButton = () => {
-    return {
-      display: this.props.isSoundOff ? 'none' : 'block'
-    };
-  };
+  // hideTurnOnButton = () => {
+  //   return {
+  //     display: this.props.isSoundOff ? 'block' : 'none'
+  //   };
+  // };
+  // hideTurnOffButton = () => {
+  //   return {
+  //     display: this.props.isSoundOff ? 'none' : 'block'
+  //   };
+  // };
 
   render() {
     return (
@@ -49,7 +49,7 @@ export class Invitation extends Component {
         <div className='r18-label'>
           <h1>R18</h1>
         </div>
-        <div className='sound-buttons mtb-10'>
+        {/* <div className='sound-buttons mtb-10'>
           <div style={this.hideTurnOnButton()}>
             <button onClick={this.props.turnSoundOn}>
               <i className='fas fa-volume-up' id='soundItem' />
@@ -60,7 +60,7 @@ export class Invitation extends Component {
               <i className='fas fa-volume-mute' id='soundItem' />
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
