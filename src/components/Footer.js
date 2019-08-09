@@ -4,19 +4,23 @@ export class Footer extends Component {
   render() {
     return (
       <div className='footer'>
-        <p>
-          Video by <strong>Tanu Gago</strong>
-        </p>
-        <p>
-          Website By{' '}
-          <a
-            className='treezy'
-            href='https://www.treezywebdesign.com/'
-            target='_blank'
-          >
-            Treezy Web Design
-          </a>
-        </p>
+        <div className='mtb-10'>
+          <p>
+            Video by <strong>Tanu Gago</strong>
+          </p>
+        </div>
+        <div className='mtb-10'>
+          <p>
+            Website By{' '}
+            <a
+              className='treezy'
+              href='https://www.treezywebdesign.com/'
+              target='_blank'
+            >
+              Treezy Web Design
+            </a>
+          </p>
+        </div>
       </div>
     );
   }

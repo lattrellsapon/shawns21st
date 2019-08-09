@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import './App.css';
 
 export class App extends Component {
+  state = {
+    isNextPage: false
+  };
+
   render() {
     return (
       <Router>
