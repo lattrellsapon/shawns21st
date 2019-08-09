@@ -8,7 +8,7 @@ export class BanjeeClassy extends Component {
   render() {
     return (
       <div>
-        <video autoPlay muted loop id='showcase-video' ref='mainVideo'>
+        <video autoPlay controls loop id='showcase-video' ref='mainVideo'>
           <source src={ShowcaseVideo} type='video/mp4' />
         </video>
         <div className='main-bg'>

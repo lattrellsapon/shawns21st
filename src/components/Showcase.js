@@ -26,11 +26,10 @@ export class Showcase extends Component {
     video.muted = true;
   };
 
-
   render() {
     return (
       <div>
-        <video autoPlay muted loop id='showcase-video' ref='mainVideo'>
+        <video autoPlay controls loop id='showcase-video' ref='mainVideo'>
           <source src={ShowcaseVideo} type='video/mp4' />
         </video>
 
