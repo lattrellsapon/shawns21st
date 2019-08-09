@@ -8,7 +8,7 @@ export class Countdown extends Component {
     minutes: undefined,
     seconds: undefined,
     isTimePassed: false,
-    happeningNowMessage: 'HAPPENING NOW'
+    happeningNowMessage: 'HAPPENING TODAY'
   };
 
   componentDidMount() {
@@ -16,8 +16,6 @@ export class Countdown extends Component {
       let now = new Date().getTime();
 
       let distance = this.state.countdownDate - now;
-
-      console.log(distance);
 
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
