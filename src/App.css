@@ -164,8 +164,10 @@ video {
 }
 
 .banjee {
-  font-family: Degrassi, Bradley Hand, cursive;
+  /* font-family: Degrassi, Bradley Hand, cursive; */
+  font-family: 'Faster One', cursive;
   font-size: 50px;
+  padding-left: 8px;
 }
 
 .classy {
