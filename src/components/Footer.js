@@ -14,7 +14,7 @@ export class Footer extends Component {
             href='https://www.treezywebdesign.com/'
             target='_blank'
           >
-            Treezy Web Desgin
+            Treezy Web Design
           </a>
         </p>
       </div>

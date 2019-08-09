@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Countdown from './Countdown';
 import Going from './Going';
 
+import { Link } from 'react-router-dom';
+
 export class Invitation extends Component {
   hideTurnOnButton = () => {
     return {
@@ -32,10 +34,13 @@ export class Invitation extends Component {
             <p>CHRISTCHURCH</p>
           </div>
           <div className='birthday-tagline mtb-30'>
-            <h1>
+            <h2>
               BE <span className='banjee'>BANJEE</span> BE{' '}
               <span className='classy'>Classy</span>
-            </h1>
+              <Link to='banjeeclassymenaing'>
+                <i className='fas fa-chevron-right meaning' />
+              </Link>
+            </h2>
           </div>
         </div>
         <div className='going-div mtb-30'>

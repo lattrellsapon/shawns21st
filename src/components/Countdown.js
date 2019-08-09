@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Duplex } from 'stream';
 
 export class Countdown extends Component {
   state = {

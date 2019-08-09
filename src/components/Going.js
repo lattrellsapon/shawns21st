@@ -8,7 +8,7 @@ export class Going extends Component {
   render() {
     return (
       <div>
-        <a href='mailto:zapantashawn@gmail' className='going-button'>
+        <a href='mailto:shawnarjan21@gmail.com' className='going-button'>
           GOING
         </a>
       </div>

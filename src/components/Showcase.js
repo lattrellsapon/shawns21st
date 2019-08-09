@@ -26,21 +26,10 @@ export class Showcase extends Component {
     video.muted = true;
   };
 
-  getStyle = () => {
-    if (!this.props.isMessageOpened) {
-      return {
-        display: 'none'
-      };
-    } else {
-      return {
-        display: 'block'
-      };
-    }
-  };
 
   render() {
     return (
-      <div style={this.getStyle()}>
+      <div>
         <video autoPlay muted loop id='showcase-video' ref='mainVideo'>
           <source src={ShowcaseVideo} type='video/mp4' />
         </video>
