@@ -37,6 +37,9 @@ export class Invitation extends Component {
             <h2>
               BE <span className='banjee'>BANJEE</span> BE{' '}
               <span className='classy'>Classy</span>
+              <Link to='banjeeclassymenaing'>
+                <i className='fas fa-chevron-right meaning' />
+              </Link>
             </h2>
           </div>
         </div>
