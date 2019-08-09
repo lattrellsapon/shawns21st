@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
+
+import ShowcaseVideo from '../videos/showcase.mp4';
+
 import { Link } from 'react-router-dom';
 
 export class BanjeeClassy extends Component {
   render() {
     return (
       <div>
-        <div className='invitation-header mtb-30'>
-          <h3 className='shawn-heading'>SHAWN ARJAN</h3>
-          <span className='cursive'>beinte uno</span>
-          <h3>23 AUGUST 2019</h3>
-        </div>
+        <video autoPlay muted loop id='showcase-video' ref='mainVideo'>
+          <source src={ShowcaseVideo} type='video/mp4' />
+        </video>
         <div className='main-bg'>
           <div className='banjee-classy'>
+            <div className='invitation-header mtb-10'>
+              <h3 className='shawn-heading'>SHAWN ARJAN</h3>
+              <span className='cursive'>beinte uno</span>
+              <h3>23 AUGUST 2019</h3>
+            </div>
             <div className='left'>
               <Link to='/'>
                 <i className='fas fa-chevron-left back-button' />

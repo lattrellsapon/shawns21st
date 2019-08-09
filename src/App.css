@@ -88,10 +88,12 @@ video {
 
 .banjee-classy {
   width: 80%;
-  margin: 200px auto;
+  margin: 10px auto;
   background: #000;
   padding: 60px 0;
   opacity: 0.8;
+  background: #000000;
+  opacity: 0.6;
 }
 
 .left {
@@ -131,9 +133,9 @@ video {
   color: #000;
 }
 
-.main-bg {
+/* .main-bg {
   background: url('./images/alcohol-bg.jpeg');
-}
+} */
 
 .invitation-content {
   top: 0;
@@ -258,6 +260,9 @@ button {
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .invitation-content {
+    margin: 150px auto 0 auto;
+  }
+  .banjee-classy {
     margin: 150px auto 0 auto;
   }
   #showcase-video {
