@@ -36,7 +36,7 @@ export class BanjeeClassy extends Component {
               <h1 className='heading-classy'>Classy</h1>
               <p>The highest level of 'supremeness' of which can be defined</p>
               <p>
-                in the case whereby the 'classy' one can recieve a compliment of
+                in the case whereby the 'classy' one can receive a compliment of
                 the like,
               </p>
               <p>
