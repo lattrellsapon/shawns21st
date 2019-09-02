@@ -8,7 +8,7 @@ export class Countdown extends Component {
     minutes: undefined,
     seconds: undefined,
     isTimePassed: false,
-    happeningNowMessage: 'HAPPENING TODAY'
+    happeningNowMessage: 'THANK YOU FOR COMING'
   };
 
   componentDidMount() {
